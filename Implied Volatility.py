@@ -246,8 +246,8 @@ def sigma_matirx(df_conbond, df_stock, df_T, start_date, end_date):
 
 
 if __name__ == "__main__":
-    start_day = '2004-01-02'
-    end_day = '2020-12-28'
+    start_day = '2015-01-02'
+    end_day = '2021-02-10'
     df_conbond = obtain_data('originclose')
 
     df_stock = stock_close()
