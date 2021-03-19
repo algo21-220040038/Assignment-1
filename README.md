@@ -1,8 +1,9 @@
-# Assignment-1-A factor strategy of Convertible bond.
+# Assignment-1- <font size="1">A factor strategy of Convertible bond
 
 Convertible bonds have a trading history of more than 20 years in China. However, it has only gradually received the attention of investors, especially institutional investors, in recent years. Here is a graph showing the volume changes of my country's convertible bonds in the past two decades.
-
-![image](https://raw.githubusercontent.com/algo21-220040038/Assignment-1/master/result/Amount.png)
+<div style="align: center">
+<img src="https://raw.githubusercontent.com/algo21-220040038/Assignment-1/master/result/Amount.png"/>
+</div>
 
 Based on the reports of some broker's analyst and derivatives' characteristic, I combine the impilied volatility with volatility of stock and obtain 
 an effective factor to trade convertible bonds in China security market.
