@@ -8,9 +8,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import h5py
-from math import log, sqrt, exp
-from scipy import stats
-from tqdm import tqdm, trange
 import matplotlib.ticker as ticker
 import datetime
 
@@ -230,7 +227,6 @@ def daily_result(Return_list, df_weight, df_cost, df_conbond):
         for j in df_conbond.loc[day:day_next].index[1:-1]:
             Return = sum((df_conbond.loc[j] / df_cost.loc[day] * df_weight.loc[day]).dropna()) * Return_start
             sub_return.append(Return)
-    #             sub_return_rate.append(Return/Return_start)
     return sub_return
 
 
@@ -371,8 +367,7 @@ def class_return(df_sigma, start_day, end_day, layer, period):
 if __name__ == "__main__":
     start_day = '2016-01-01'
     end_day = '2021-02-10'
-
-    df_sigma = pd.read_csv('stock_sigma.csv')
+    df_sigma = pd.read_csv('Implied_volatility.csv')
     Return_return_Result,Return_weight,Bench_list,Bench_weight=class_return(df_sigma, start_day, end_day, 3 ,20)
     Return_return_Result10, Return_weight10, Bench_list10, Bench_weight10 = class_return(df_sigma, start_day, end_day,
                                                                                          3, 10)

@@ -253,3 +253,4 @@ if __name__ == "__main__":
     df_stock = stock_close()
     df_T = maturity_day(df_conbond)
     df_sigma = sigma_matirx(df_conbond, df_stock, df_T, start_day, end_day)
+    df_sigma.to_csv('Implied_volatility.csv')
